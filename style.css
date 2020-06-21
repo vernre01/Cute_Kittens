@@ -113,12 +113,18 @@ footer a:hover {
 *:after {
     box-sizing: inherit;
 }
-    
+
+#columns {
+    /*creates masonry*/
+    margin:1.5em auto;
+    box-sizing:border-box;
+    column-gap: 1.5em;
+}
+
 article {
     display:inline-block;
     background-color:white;
     vertical-align: top;
-    width:70%;
     padding: 1em;
     margin: 0 0 1.5em;
 }
@@ -136,13 +142,6 @@ article img {
     content: "";
     clear: both;
     display: block;
-}
-
-#columns {
-    /*creates masonry*/
-    margin:1.5em auto;
-    box-sizing:border-box;
-    column-gap: 1.5em;
 }
     
     /*the remainder of code makes masonry responsive*/
