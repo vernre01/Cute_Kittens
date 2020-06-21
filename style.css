@@ -122,14 +122,15 @@ footer a:hover {
 article {
     display:inline-block;
     background-color:white;
-    vertical-align: top; 
-}
-
-article.rating {
-    /*creates masonry*/
-    max-width:220px;
+    vertical-align: top;
+    width:70%;
     padding: 1em;
     margin: 0 0 1.5em;
+}
+
+.rating {
+    /*creates masonry*/
+    max-width:220px;
 }
     
 article img {
@@ -166,7 +167,7 @@ article img {
     
     /* Masonry on smallest screens */
 @media only screen and (max-width: 540px) {
-    main {
+    #columns {
         column-count: 1;
     }
 }
