@@ -54,12 +54,7 @@ header img {
     
 main {
     text-align:center;
-    /* background-color: lightgray; */
     padding:10px;
-    /*creates masonry*/
-    margin:1.5em auto;
-    box-sizing:border-box;
-    column-gap: 1.5em;
 }
     
 label {
@@ -141,6 +136,13 @@ article img {
     content: "";
     clear: both;
     display: block;
+}
+
+#columns {
+    /*creates masonry*/
+    margin:1.5em auto;
+    box-sizing:border-box;
+    column-gap: 1.5em;
 }
     
     /*the remainder of code makes masonry responsive*/
