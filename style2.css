@@ -1,6 +1,10 @@
+*, *:before, *:after {
+    box-sizing:border-box;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color:rgb(214, 234, 252);
+    background-color:rgb(124,244,213,96%)/*light teal*/;
     margin:0;
 }
     
@@ -35,31 +39,68 @@ header a {
 }
     
 header a:hover {
-    color:darkorange;
+    color:rgb(242,132,62,95%)/*orange*/;
 }
     
 header nav {
     float:right;
 }
     
-nav a:hover {
+header nav a:hover {
     color:white;
-    background-color:darkorange;
+    background-color:rgb(242,132,62,95%)/*orange*/;
     border-radius: 10px;
 }
     
 header img {
     float:left;
 }
-    
-main {
+
+main:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+aside {
+    float:left;
+    width:25%;
+    background-color:rgb(140,123,93)/*dark brown*/;
+    padding:10px;
+    margin:auto;
+}
+
+hgroup h1 {
+    color: rgb(242,132,62,95%)/*orange*/;
+    text-transform: uppercase;
+    text-shadow: .5px .5px black;
+    font-size:xx-large;
+}
+
+hgroup h2 {
+    color: black;
+    font-style:italic;
+}
+
+article.content {
+    float:left;
+    width:75%;
+    padding:10px;
+    margin:auto;
+}
+
+figcaption {
+    display:none;
+}
+
+main#voting {
     text-align:center;
     padding:10px;
 }
     
 label {
     background-color: white;
-    border: 2px solid darkorange;
+    border: 2px solid rgb(242,132,62,95%)/*orange*/;
     color: black;
     padding: 10px 15px;
     text-align: center;
@@ -70,13 +111,13 @@ label {
 }
     
 label:hover {
-    background-color: darkorange;
+    background-color: rgb(242,132,62,95%)/*orange*/;
     border: 2px solid white;
     color: white;
 }
     
 label:active {
-    background-color: darkorange;
+    background-color: rgb(242,132,62,95%)/*orange*/;
     border: 2px solid white;
     color: white;
 }
@@ -93,24 +134,29 @@ input[type=radio] {
 }
     
 input[type=radio]:checked + label {
-    background-color: darkorange;
+    background-color: rgb(242,132,62,95%)/*orange*/;
     border: 2px solid white;
     color: white;
 }
     
-footer a {
+footer a,aside a {
     text-decoration:none;
     color:black;
 }
-    
+ 
 footer a:hover {
-    color:darkorange;
+    color:rgb(242,132,62,95%)/*orange*/;
+}
+
+aside a:hover {
+    text-decoration: underline;
+    color:black;
 }
     
 /*creates masonry*/
-*,
-*:before,
-*:after {
+main#voting,
+main#voting:before,
+main#voting:after {
     box-sizing: inherit;
 }
 
@@ -172,5 +218,8 @@ article img {
 @media only screen and (max-width: 540px) {
     #columns {
         column-count: 1;
+    }
+    aside, article.content {
+        width:100%;
     }
 }
