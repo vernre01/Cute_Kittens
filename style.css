@@ -42,7 +42,7 @@ header nav {
     float:right;
 }
     
-nav a:hover {
+header nav a:hover {
     color:white;
     background-color:rgb(242,132,62,95%)/*orange*/;
     border-radius: 10px;
@@ -63,14 +63,28 @@ main:after {
 }
 
 aside {
+    box-sizing:border-box;
     float:left;
     width:25%;
     background-color:rgb(140,123,93)/*dark brown*/;
+    padding:10px;
+    margin:10px;
+}
+
+aside li {
+    list-style:none;
 }
 
 article.content {
+    box-sizing:border-box;
     float:left;
     width:75%;
+    padding:10px;
+    margin:10px;
+}
+
+figcaption {
+    display:none;
 }
 
 main#voting {
@@ -119,12 +133,12 @@ input[type=radio]:checked + label {
     color: white;
 }
     
-footer a {
+footer a,aside a {
     text-decoration:none;
     color:black;
 }
     
-footer a:hover {
+footer a:hover,aside a:hover {
     color:rgb(242,132,62,95%)/*orange*/;
 }
     
