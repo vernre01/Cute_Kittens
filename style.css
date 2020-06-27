@@ -91,6 +91,14 @@ input[type=radio] {
     white-space: nowrap;
     width: 1px;
 }
+
+aside {
+    float:left;
+}
+
+article.content {
+    float:left;
+}
     
 input[type=radio]:checked + label {
     background-color: darkorange;
