@@ -70,6 +70,18 @@ aside {
     margin:auto;
 }
 
+hgroup h1 {
+    color: rgb(242,132,62,95%)/*orange*/;
+    text-transform: uppercase;
+    text-shadow: .5px .5px black;
+    font-size:xx-large;
+}
+
+hgroup h2 {
+    color: black;
+    font-style:italic;
+}
+
 article.content {
     float:left;
     width:75%;
@@ -131,9 +143,14 @@ footer a,aside a {
     text-decoration:none;
     color:black;
 }
-    
-footer a:hover,aside a:hover {
+ 
+footer a:hover {
     color:rgb(242,132,62,95%)/*orange*/;
+}
+
+aside a:hover {
+    text-decoration: underline;
+    color:black;
 }
     
 /*creates masonry*/
