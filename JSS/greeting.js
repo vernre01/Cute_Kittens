@@ -7,11 +7,10 @@ function welcome() {
         } else if (catLover == 'No' || catLover == 'no' || catLover == 'NO') {
             greeting = 'No worries! You\'ll be a Cat Lover soon!';
             } else if (catLover >= 0) {
-                greeting = 'A number? Perhaps you\'d like to try again?';
-                }
-                else {
+                greeting = 'Perhaps you\'d like to try again? Vote Yes or No!';
+                } else {
                     greeting = 'Um... Could you try again? Yes or No will do!';
-    }
+                    }
 
 document.getElementById('greeting').innerHTML = greeting;
 }
