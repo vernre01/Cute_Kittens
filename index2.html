@@ -6,7 +6,7 @@
     <title>Home | Cute or Not</title>
     <link href="style2.css" rel="stylesheet" type="text/css" />
 </head>
-<body>
+<body onload="welcome()">
     <header class="clearfix">
         <a href="index.html" target="_blank"> <img src="images/logo.jpg" alt="Cute Kittens Logo" width="200"></a>
         <nav>
@@ -20,6 +20,7 @@
     <main id="voting">
         <article>
             <h1><span id="greeting"></span></h1>
+            <button type="button" onclick="welcome()">Vote Again</button>
             <p>Choose background color:</p>
             <button type="button" onclick="getTeal()">Teal</button>
             <button type="button" onclick="getBrown()">Brown</button>
