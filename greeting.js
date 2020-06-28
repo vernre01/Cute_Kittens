@@ -1,4 +1,4 @@
-var catLover = prompt('Do you love cats? Yes or No?');
+var catLover = prompt('Do you love cats?', 'Yes or No?');
 var greeting;
 
 if(catLover == 'Yes' || catLover == 'yes' || catLover == 'YES') {
