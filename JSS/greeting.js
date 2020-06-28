@@ -1,5 +1,5 @@
 var catLover = prompt('Do you love cats?', 'Yes or No?');
-var greeting = document.getElementById('greeting');
+var greeting = document.getElementById('greeting').innerHTML;
 
 if(catLover == 'Yes' || catLover == 'yes' || catLover == 'YES') {
     greeting.textContent = 'Welcome Cat Lovers!';
