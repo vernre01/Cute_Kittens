@@ -15,7 +15,7 @@ function voteYes(kittenNumber) {
         } else {
             txt = 'Try again.';
     }
-    document.getElementById('voteYes' + kittenNumber).innerHTML = ' ' + y;
+    document.getElementById('voteYes').innerHTML = ' ' + y;
     document.getElementById('results' + kittenNumber).innerHTML = txt;
 }
 
@@ -32,6 +32,6 @@ function voteNo(kittenNumber) {
         } else {
             txt = 'Try again.';
     }
-document.getElementById('voteNo' + kittenNumber).innerHTML = ' ' + n;
+document.getElementById('voteNo').innerHTML = ' ' + n;
 document.getElementById('results' + kittenNumber).innerHTML = txt;
 }
