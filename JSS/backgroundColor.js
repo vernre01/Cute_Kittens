@@ -1,12 +1,9 @@
 var newColor;
 
-function getBackgroundColor(newColor) {
-    var colorOrange = 'Orange';
-    var colorBrown = 'Brown';
-
-    if (newColor === colorOrange) {
+function setBackgroundColor(newColor) {
+    if (newColor === 'Orange') {
         document.body.style.backgroundColor = "rgb(242,132,62,95%)";
-    } else if (newColor === colorBrown) {
+    } else if (newColor === 'Brown') {
         document.body.style.backgroundColor = "rgb(140,123,93)";
     } else {
         //sets color to Teal, the default color

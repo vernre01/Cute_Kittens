@@ -1,10 +1,10 @@
 function welcome() {
-    var catLover = prompt('Do you love cats?', 'Yes or No?');
+    var catLover = prompt('Do you love cats?', 'Yes or No?').toLowerCase().trim();
     var greeting;
 
-    if(catLover == 'Yes' || catLover == 'yes' || catLover == 'YES') {
+    if(catLover == 'yes') {
         greeting = 'Welcome Cat Lovers!';
-        } else if (catLover == 'No' || catLover == 'no' || catLover == 'NO') {
+        } else if (catLover == 'no') {
             greeting = 'No worries! You\'ll be a Cat Lover soon!';
             } else if (catLover >= 0) {
                 greeting = 'Perhaps you\'d like to try again? Vote Yes or No!';
