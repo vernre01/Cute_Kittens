@@ -1,4 +1,6 @@
-var newColor;
+var btn1 = document.getElementById('Teal');
+var btn2 = document.getElementById('Brown');
+var btn3 = document.getElementById('Orange');
 
 function setBackgroundColor(newColor) {
     if (newColor === 'Orange') {
@@ -10,3 +12,7 @@ function setBackgroundColor(newColor) {
         document.body.style.backgroundColor = "rgb(124,244,213,96%)";
     }
 }
+
+btn1.addEventListener('click', function() {setBackgroundColor('Teal')},false);
+btn2.addEventListener('click', function() {setBackgroundColor('Brown')},false);
+btn3.addEventListener('click', function() {setBackgroundColor('Orange')},false);

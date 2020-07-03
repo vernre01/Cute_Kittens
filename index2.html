@@ -20,11 +20,11 @@
     <main id="voting">
         <article>
             <h1><span id="greeting"></span></h1>
-            <button type="button" onclick="welcome()">Vote Again</button>
+            <button type="button" id="welcome">Vote Again</button>
             <p>Choose background color:</p>
-            <button type="button" onclick="setBackgroundColor('Teal')">Teal</button>
-            <button type="button" onclick="setBackgroundColor('Brown')">Brown</button>
-            <button type="button" onclick="setBackgroundColor('Orange')">Orange</button>
+            <button type="button" id="Teal">Teal</button>
+            <button type="button" id="Brown">Brown</button>
+            <button type="button" id="Orange">Orange</button>
             <h3>Total 'Yes' Votes:<span id="voteYes"></span></h3>
             <h3>Total 'No' Votes:<span id="voteNo"></span></h3>
         </article>
@@ -33,9 +33,9 @@
                 <img src="images/daisies.jpg" alt="Kitten and Daisies" width="200">
                 <h2>Kitten with daisies</h2>
                 <p>This kitten looks scared of some daisies! <br>
-                    <input type="radio" id="cute1" name="cat1" value="cute1" onclick="voteYes(1)">
+                    <input type="radio" id="cute1" name="cat1" value="cute1">
                     <label for="cute1">Cute</label> or 
-                    <input type="radio" id="notcute1" name="cat1" value="notcute1" onclick="voteNo(1)">
+                    <input type="radio" id="notcute1" name="cat1" value="notcute1">
                     <label for="notcute1">Not?</label>
                 </p>
                 <p id="results1"></p>
@@ -44,9 +44,9 @@
                 <img src="images/flower.jpg" alt="Kitten with Flower" width="200">
                 <h2>Kitten with flower</h2>
                 <p>This city kitty is curious about a flower. <br>
-                    <input type="radio" id="cute2" name="cat2" value="cute2" onclick="voteYes(2)">
+                    <input type="radio" id="cute2" name="cat2" value="cute2">
                     <label for="cute2">Cute</label> or 
-                    <input type="radio" id="notcute2" name="cat2" value="notcute2" onclick="voteNo(2)">
+                    <input type="radio" id="notcute2" name="cat2" value="notcute2">
                     <label for="notcute2">Not?</label>
                 </p>
                 <p id="results2"></p>
@@ -55,9 +55,9 @@
                 <img src="images/leopardprint.jpg" alt="Kitten Portrait" width="200">
                 <h2>Kitten Portrait</h2>
                 <p>This kitten is sitting pretty for it's portrait. <br>
-                    <input type="radio" id="cute3" name="cat3" value="cute3" onclick="voteYes(3)">
+                    <input type="radio" id="cute3" name="cat3" value="cute3">
                     <label for="cute3">Cute</label> or 
-                    <input type="radio" id="notcute3" name="cat3" value="notcute3" onclick="voteNo(3)">
+                    <input type="radio" id="notcute3" name="cat3" value="notcute3">
                     <label for="notcute3">Not?</label>
                 </p>
                 <p id="results3"></p>
@@ -66,9 +66,9 @@
                 <img src="images/meow.jpg" alt="Kitten and Daisies" width="200">
                 <h2>Uncertain Kitten</h2>
                 <p>This kitten looks uncertain of heights. <br>
-                    <input type="radio" id="cute4" name="cat4" value="cute4" onclick="voteYes(4)">
+                    <input type="radio" id="cute4" name="cat4" value="cute4">
                     <label for="cute4">Cute</label> or 
-                    <input type="radio" id="notcute4" name="cat4" value="notcute4" onclick="voteNo(4)">
+                    <input type="radio" id="notcute4" name="cat4" value="notcute4">
                     <label for="notcute4">Not?</label>
                 </p>
                 <p id="results4"></p>
@@ -77,9 +77,9 @@
                 <img src="images/orange.jpg" alt="Kitten and Daisies" width="200">
                 <h2>Kitten on Ledge</h2>
                 <p>Sitting pretty on a ledge and looking into the distance.<br>
-                    <input type="radio" id="cute5" name="cat5" value="cute5" onclick="voteYes(5)">
+                    <input type="radio" id="cute5" name="cat5" value="cute5">
                     <label for="cute5">Cute</label> or 
-                    <input type="radio" id="notcute5" name="cat5" value="notcute5" onclick="voteNo(5)">
+                    <input type="radio" id="notcute5" name="cat5" value="notcute5">
                     <label for="notcute5">Not?</label>
                 </p>
                 <p id="results5"></p>
@@ -88,9 +88,9 @@
                 <img src="images/sitting.jpg" alt="Kitten Slouching" width="200">
                 <h2>Kitten Slouching</h2>
                 <p>Wonder why it's slouching?<br>
-                    <input type="radio" id="cute6" name="cat6" value="cute6" onclick="voteYes(6)">
+                    <input type="radio" id="cute6" name="cat6" value="cute6">
                     <label for="cute6">Cute</label> or 
-                    <input type="radio" id="notcute6" name="cat6" value="notcute6" onclick="voteNo(6)">
+                    <input type="radio" id="notcute6" name="cat6" value="notcute6">
                     <label for="notcute6">Not?</label>
                 </p>
                 <p id="results6"></p>
@@ -99,9 +99,9 @@
                 <img src="images/tree.jpg" alt="Kitten in a Tree" width="200">
                 <h2>Kitten in Tree</h2>
                 <p>Brave kittens climb trees! <br>
-                    <input type="radio" id="cute7" name="cat7" value="cute7" onclick="voteYes(7)">
+                    <input type="radio" id="cute7" name="cat7" value="cute7">
                     <label for="cute7">Cute</label> or 
-                    <input type="radio" id="notcute7" name="cat7" value="notcute7" onclick="voteNo(7)">
+                    <input type="radio" id="notcute7" name="cat7" value="notcute7">
                     <label for="notcute7">Not?</label>
                 </p>
                 <p id="results7"></p>
@@ -110,9 +110,9 @@
                 <img src="images/wood.jpg" alt="Kitten Hiding" width="200">
                 <h2>Kitten Hiding</h2>
                 <p>Wonder what this kitten is hiding from? <br>
-                    <input type="radio" id="cute8" name="cat8" value="cute8" onclick="voteYes(8)">
+                    <input type="radio" id="cute8" name="cat8" value="cute8">
                     <label for="cute8">Cute</label> or 
-                    <input type="radio" id="notcute8" name="cat8" value="notcute8" onclick="voteNo(8)">
+                    <input type="radio" id="notcute8" name="cat8" value="notcute8">
                     <label for="notcute8">Not?</label>
                 </p>
                 <p id="results8"></p>
@@ -121,9 +121,9 @@
                 <img src="images/yawn.jpg" alt="Kitten Yawning" width="200">
                 <h2>Tired Kitten</h2>
                 <p>Such a tired kitten. <br>
-                    <input type="radio" id="cute9" name="cat9" value="cute9" onclick="voteYes(9)">
+                    <input type="radio" id="cute9" name="cat9" value="cute9">
                     <label for="cute9">Cute</label> or 
-                    <input type="radio" id="notcute9" name="cat9" value="notcute9" onclick="voteNo(9)">
+                    <input type="radio" id="notcute9" name="cat9" value="notcute9">
                     <label for="notcute9">Not?</label>
                 </p>  
                 <p id="results9"></p>
