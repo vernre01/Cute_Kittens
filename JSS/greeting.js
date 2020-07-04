@@ -1,25 +1,20 @@
-document.getElementById('welcome').addEventListener('click', function() {welcome()},false);
+document.getElementById('welcome').addEventListener('click', function() {welcome();},false);
 
 function welcome() {
     var catLover = prompt('Do you love cats?', 'Yes or No?');
     var greeting;
 
-    if (catLover === null) {
-        greeting = 'Perhaps you\'d like to try again? Vote Yes or No!';
-        document.getElementById('greeting').innerHTML = greeting;
+    while (catLover === null || (catLover.toLowerCase().trim() !== 'yes' && catLover.toLowerCase().trim() !== 'no')) {
+        prompt('Please enter Yes or No!');
+        if (catLover.toLowerCase().trim() === 'yes' || catLover.toLowerCase().trim() === 'no') {
+            break;
+        }
     }
 
-    catLover = catLover.toLowerCase().trim();
-
-    if(catLover == 'yes') {
+    if(catLover.toLowerCase().trim() === 'yes') {
         greeting = 'Welcome Cat Lovers!';
-        } else if (catLover == 'no') {
-            greeting = 'No worries! You\'ll be a Cat Lover soon!';
-            } else if (catLover >= 0 || catLover === null) {
-                greeting = 'Perhaps you\'d like to try again? Vote Yes or No!';
-                } else {
-                    greeting = 'Um... Could you try again? Yes or No will do!';
-                    }
-
+        } else if (catLover.toLowerCase().trim() === 'no') {
+            greeting = 'No worries! You\'ll be a Cat Lover soon!';   
+        }
 document.getElementById('greeting').innerHTML = greeting;
-}
+    }

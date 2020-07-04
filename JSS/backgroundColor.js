@@ -13,6 +13,6 @@ function setBackgroundColor(newColor) {
     }
 }
 
-btn1.addEventListener('click', function() {setBackgroundColor('Teal')},false);
-btn2.addEventListener('click', function() {setBackgroundColor('Brown')},false);
-btn3.addEventListener('click', function() {setBackgroundColor('Orange')},false);
+btn1.addEventListener('click', function() {setBackgroundColor('Teal');},false);
+btn2.addEventListener('click', function() {setBackgroundColor('Brown');},false);
+btn3.addEventListener('click', function() {setBackgroundColor('Orange');},false);

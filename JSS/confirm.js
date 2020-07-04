@@ -51,22 +51,22 @@ document.getElementById('results' + kittenNumber).innerHTML = txt;
 
 //Calls the appropriate voting function on the button click.
 
-btnYes1.addEventListener('click', function() {voteYes(1)},false);
-btnYes2.addEventListener('click', function() {voteYes(2)},false);
-btnYes3.addEventListener('click', function() {voteYes(3)},false);
-btnYes4.addEventListener('click', function() {voteYes(4)},false);
-btnYes5.addEventListener('click', function() {voteYes(5)},false);
-btnYes6.addEventListener('click', function() {voteYes(6)},false);
-btnYes7.addEventListener('click', function() {voteYes(7)},false);
-btnYes8.addEventListener('click', function() {voteYes(8)},false);
-btnYes9.addEventListener('click', function() {voteYes(9)},false);
+btnYes1.addEventListener('click', function() {voteYes(1);},false);
+btnYes2.addEventListener('click', function() {voteYes(2);},false);
+btnYes3.addEventListener('click', function() {voteYes(3);},false);
+btnYes4.addEventListener('click', function() {voteYes(4);},false);
+btnYes5.addEventListener('click', function() {voteYes(5);},false);
+btnYes6.addEventListener('click', function() {voteYes(6);},false);
+btnYes7.addEventListener('click', function() {voteYes(7);},false);
+btnYes8.addEventListener('click', function() {voteYes(8);},false);
+btnYes9.addEventListener('click', function() {voteYes(9);},false);
 
-btnNo1.addEventListener('click', function() {voteNo(1)},false);
-btnNo2.addEventListener('click', function() {voteNo(2)},false);
-btnNo3.addEventListener('click', function() {voteNo(3)},false);
-btnNo4.addEventListener('click', function() {voteNo(4)},false);
-btnNo5.addEventListener('click', function() {voteNo(5)},false);
-btnNo6.addEventListener('click', function() {voteNo(6)},false);
-btnNo7.addEventListener('click', function() {voteNo(7)},false);
-btnNo8.addEventListener('click', function() {voteNo(8)},false);
-btnNo9.addEventListener('click', function() {voteNo(9)},false);
+btnNo1.addEventListener('click', function() {voteNo(1);},false);
+btnNo2.addEventListener('click', function() {voteNo(2);},false);
+btnNo3.addEventListener('click', function() {voteNo(3);},false);
+btnNo4.addEventListener('click', function() {voteNo(4);},false);
+btnNo5.addEventListener('click', function() {voteNo(5);},false);
+btnNo6.addEventListener('click', function() {voteNo(6);},false);
+btnNo7.addEventListener('click', function() {voteNo(7);},false);
+btnNo8.addEventListener('click', function() {voteNo(8);},false);
+btnNo9.addEventListener('click', function() {voteNo(9);},false);
