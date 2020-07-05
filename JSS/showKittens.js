@@ -6,14 +6,14 @@ function showKittens() {
     //Get # of kittens to show from user
     while (howMany !== null) {
         if (howMany >= 0 && howMany <= 9) {
-            //hide kittens above the number entered by user. "TypeError: Cannot read property 'style' of null at showKittens (showKittens.js:14) at HTMLButtonElement.<anonymous> (showKittens.js:1)"
+            //hide kittens above the number entered by user. "TypeError: Cannot read property 'style' of null at showKittens (showKittens.js:16) at HTMLButtonElement.<anonymous> (showKittens.js:1)" But code still works?
             for (var i = 0; i <= 9; i++) {
-                var thisCat = document.getElementById('article'+i);
+                var thisCat = document.getElementsByClassName('rating');
                 
                 if (i < howMany) {
-                    thisCat.style.display = "inline-block";
+                    thisCat[i].style.display = "inline-block";
                 } else {
-                    thisCat.style.display = "none";
+                    thisCat[i].style.display = "none";
                 }
             }  
             break;
